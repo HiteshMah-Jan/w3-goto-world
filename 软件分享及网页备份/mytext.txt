@@ -1,5 +1,22 @@
 mytext
 
 https://github.com/mission-peace
+$table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')
+                ->onDelete('cascade');
+            $table->string('bank_account', 20);
+            $table->string('id_number', 15);
+            $table->timestamps();
+        });
+        
+        
+         上传视频超时时间 ms 默认5分钟
+        editor.config.uploadVideoTimeout = 1000 * 60 * 5;
+
+        // 跨域带 cookie
+        editor.config.withVideoCredentials = false;
+
+        // 自定义alert
+
 
 https://github.com/gauravssnl
